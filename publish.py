@@ -13,14 +13,13 @@ def json_serial(obj):
 
 
 def message():
-    print("Publicado")
     dados = {
         'date_measure': datetime.datetime.now(),
         'consume_breaker': random.uniform(0.1, 2.0),
         'demand_breaker': random.uniform(1.0, 10.0),
-        'phase_one_power_factor': random.uniform(0.7, 1.3),
-        'phase_two_power_factor': random.uniform(0.7, 1.3),
-        'phase_three_power_factor': random.uniform(0.7, 1.3),
+        'phase_one_power_factor': random.uniform(0.85, 1.15),
+        'phase_two_power_factor': random.uniform(0.85, 1.15),
+        'phase_three_power_factor': random.uniform(0.85, 1.15),
         'phase_one_voltage': random.uniform(0.1, 2.0),
         'phase_two_voltage': random.uniform(0.1, 2.0),
         'phase_three_voltage': random.uniform(0.1, 2.0),
